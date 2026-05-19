@@ -1,0 +1,253 @@
+body{
+
+    margin:0;
+
+    font-family:Arial;
+
+    background:#f4f4f4;
+}
+
+/* TOOLBAR */
+
+.toolbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:white;
+
+    padding:15px;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    border-bottom:2px solid #ddd;
+
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+input,
+select{
+
+    padding:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+}
+
+button{
+
+    padding:10px 20px;
+
+    border:none;
+
+    background:#004578;
+
+    color:white;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+button:hover{
+
+    background:#0063B1;
+}
+
+/* TABLE */
+
+.container{
+
+    width:98%;
+
+    margin:auto;
+
+    margin-top:10px;
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+}
+
+th{
+
+    position:sticky;
+
+    top:72px;
+
+    background:#004578;
+
+    color:white;
+
+    padding:12px;
+
+    z-index:100;
+}
+
+td{
+
+    border-bottom:1px solid #ddd;
+
+    padding:10px;
+
+    vertical-align:middle;
+}
+
+/* TIMELINE */
+
+.timelineContainer{
+
+    width:100%;
+}
+
+.heures{
+
+    display:flex;
+
+    width:100%;
+
+    font-size:10px;
+
+    color:#666;
+
+    margin-bottom:3px;
+}
+
+.heure{
+
+    width:calc(100% / 24);
+
+    text-align:center;
+}
+
+.timeline{
+
+    position:relative;
+
+    width:100%;
+
+    height:60px;
+
+    background:
+    repeating-linear-gradient(
+        to right,
+        #fafafa,
+        #fafafa calc(100% / 24 - 1px),
+        #ddd calc(100% / 24)
+    );
+
+    border:1px solid #ddd;
+
+    border-radius:5px;
+}
+
+/* BLOCS */
+
+.bloc{
+
+    position:absolute;
+
+    top:10px;
+
+    height:40px;
+
+    border-radius:6px;
+
+    color:white;
+
+    font-size:11px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    padding:2px;
+
+    box-sizing:border-box;
+}
+
+.bloc:hover{
+
+    opacity:0.85;
+}
+
+/* ICONES */
+
+.icone{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    margin-right:10px;
+}
+
+/* MODAL */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:9999;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.4);
+}
+
+.modal-content{
+
+    background:white;
+
+    width:500px;
+
+    margin:8% auto;
+
+    padding:20px;
+
+    border-radius:10px;
+}
+
+.modal-content input,
+.modal-content select{
+
+    width:100%;
+
+    margin-top:10px;
+
+    box-sizing:border-box;
+}
+
+.modalButtons{
+
+    margin-top:20px;
+
+    text-align:right;
+}

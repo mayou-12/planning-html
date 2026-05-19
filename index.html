@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Planning Timeline RH</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- TOOLBAR -->
+
+    <div class="toolbar">
+
+        <input type="date"
+               id="date">
+
+        <select id="activite">
+
+            <option value="Présence">Présence</option>
+            <option value="Pause">Pause</option>
+            <option value="Day Off">Day Off</option>
+            <option value="Congé">Congé</option>
+            <option value="RTT">RTT</option>
+            <option value="Alternance Ecole">Alternance Ecole</option>
+            <option value="Maladie">Maladie</option>
+            <option value="Absence">Absence</option>
+            <option value="Grève">Grève</option>
+            <option value="Férié">Férié</option>
+            <option value="Départ">Départ</option>
+            <option value="Récupération">Récupération</option>
+            <option value="Récupération A-1">Récupération A-1</option>
+
+        </select>
+
+        <select id="lieu">
+
+            <option value="Sur site">Sur site</option>
+            <option value="Télétravail">Télétravail</option>
+            <option value="Déplacement">Déplacement</option>
+
+        </select>
+
+        <input type="time"
+               id="debut">
+
+        <input type="time"
+               id="fin">
+
+        <button onclick="ajouterBloc()">
+            Ajouter
+        </button>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="container">
+
+        <table id="planning">
+
+            <thead>
+
+                <tr>
+
+                    <th>Actions</th>
+
+                    <th>Jour</th>
+
+                    <th>Date</th>
+
+                    <th>Total</th>
+
+                    <th>Timeline</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="modal"
+         id="modal">
+
+        <div class="modal-content"
+             id="modalContent">
+
+        </div>
+
+    </div>
+
+    <!-- TEST JS -->
+
+    <script>
+
+        console.log("INDEX HTML OK");
+
+    </script>
+
+    <!-- SCRIPT -->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
